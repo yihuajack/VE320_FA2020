@@ -1,0 +1,26 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{clear}\PYG{p}{,} \PYG{n}{clc}
+\PYG{n}{E}\PYG{p}{=}\PYG{n+nb}{linspace}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mf}{0.05170399431}\PYG{p}{,}\PYG{l+m+mi}{1000}\PYG{p}{);}
+\PYG{n}{x}\PYG{p}{=}\PYG{n+nb}{linspace}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{1000}\PYG{p}{);}
+\PYG{c}{\PYGZpc{} f=exp(\PYGZhy{}0.3*1.602176565*10\PYGZca{}(\PYGZhy{}19)/(1.3806488*10\PYGZca{}(\PYGZhy{}23)*300)\PYGZhy{}x);}
+\PYG{n}{f}\PYG{p}{=}\PYG{l+m+mf}{1.}\PYG{o}{/}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{o}{+}\PYG{n+nb}{exp}\PYG{p}{(}\PYG{l+m+mf}{0.3}\PYG{o}{*}\PYG{l+m+mf}{1.602176565}\PYG{o}{*}\PYG{l+m+mi}{10}\PYGZca{}\PYG{p}{(}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{19}\PYG{p}{)}\PYG{o}{/}\PYG{p}{(}\PYG{l+m+mf}{1.3806488}\PYG{o}{*}\PYG{l+m+mi}{10}\PYGZca{}\PYG{p}{(}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{23}\PYG{p}{)}\PYG{o}{*}\PYG{l+m+mi}{300}\PYG{p}{)}\PYG{o}{+}\PYG{n}{x}\PYG{p}{));}
+\PYG{n}{plot}\PYG{p}{(}\PYG{n}{E}\PYG{p}{,}\PYG{n}{f}\PYG{p}{);}
+\PYG{n}{xlabel}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}E\PYGZhy{}E\PYGZus{}c (eV)\PYGZsq{}}\PYG{p}{);}
+\PYG{n}{ylabel}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}f\PYGZus{}F(E)\PYGZsq{}}\PYG{p}{);}
+\PYG{n}{axis}\PYG{p}{([}\PYG{l+m+mi}{0} \PYG{l+m+mf}{0.05170399431} \PYG{l+m+mi}{0} \PYG{l+m+mf}{1e\PYGZhy{}5}\PYG{p}{]);}
+\PYG{n}{text}\PYG{p}{(}\PYG{l+m+mf}{0.33}\PYG{p}{,}\PYG{l+m+mf}{5e\PYGZhy{}6}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}\PYGZdl{}f\PYGZus{}F(E)=\PYGZbs{}frac\PYGZob{}1\PYGZcb{}\PYGZob{}1+\PYGZbs{}exp\PYGZob{}\PYGZbs{}big(\PYGZbs{}frac\PYGZob{}E\PYGZhy{}E\PYGZus{}F\PYGZcb{}\PYGZob{}kT\PYGZcb{}\PYGZbs{}big)\PYGZcb{}\PYGZcb{}\PYGZdl{}\PYGZsq{}}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}Interpreter\PYGZsq{}}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}latex\PYGZsq{}}\PYG{p}{);}
+\PYG{n}{saveas}\PYG{p}{(}\PYG{n}{gcf}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}3\PYGZhy{}2(a)\PYGZsq{}}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}epsc\PYGZsq{}}\PYG{p}{);}     \PYG{c}{\PYGZpc{} Alternatively use function \PYGZsq{}exportgraphics\PYGZsq{}}
+\PYG{n}{T}\PYG{p}{=}\PYG{n}{table}\PYG{p}{(}\PYG{n}{E}\PYG{o}{\PYGZsq{}}\PYG{p}{,}\PYG{n}{f}\PYG{o}{\PYGZsq{}}\PYG{p}{);}
+\PYG{n}{writetable}\PYG{p}{(}\PYG{n}{T}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}3\PYGZhy{}2(a).csv\PYGZsq{}}\PYG{p}{);}
+\PYG{n}{E}\PYG{p}{=}\PYG{n+nb}{linspace}\PYG{p}{(}\PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{0.05170399431}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{1000}\PYG{p}{);}
+\PYG{n}{x}\PYG{p}{=}\PYG{n+nb}{linspace}\PYG{p}{(}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{1000}\PYG{p}{);}
+\PYG{n}{f}\PYG{p}{=}\PYG{l+m+mi}{1}\PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{1.}\PYG{o}{/}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{o}{+}\PYG{n+nb}{exp}\PYG{p}{(}\PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{0.25}\PYG{o}{*}\PYG{l+m+mf}{1.602176565}\PYG{o}{*}\PYG{l+m+mi}{10}\PYGZca{}\PYG{p}{(}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{19}\PYG{p}{)}\PYG{o}{/}\PYG{p}{(}\PYG{l+m+mf}{1.3806488}\PYG{o}{*}\PYG{l+m+mi}{10}\PYGZca{}\PYG{p}{(}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{23}\PYG{p}{)}\PYG{o}{*}\PYG{l+m+mi}{300}\PYG{p}{)}\PYG{o}{+}\PYG{n}{x}\PYG{p}{));}
+\PYG{n}{plot}\PYG{p}{(}\PYG{n}{E}\PYG{p}{,}\PYG{n}{f}\PYG{p}{);}
+\PYG{n}{xlabel}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}E\PYGZhy{}E\PYGZus{}v (eV)\PYGZsq{}}\PYG{p}{);}
+\PYG{n}{ylabel}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}1\PYGZhy{}f\PYGZus{}F(E)\PYGZsq{}}\PYG{p}{);}
+\PYG{n}{axis}\PYG{p}{([}\PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{0.05170399431} \PYG{l+m+mi}{0} \PYG{l+m+mi}{0} \PYG{l+m+mf}{1e\PYGZhy{}4}\PYG{p}{]);}
+\PYG{n}{text}\PYG{p}{(}\PYG{l+m+mf}{0.2}\PYG{p}{,}\PYG{l+m+mf}{3.3e\PYGZhy{}5}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}\PYGZdl{}f\PYGZus{}F(E)=1\PYGZhy{}\PYGZbs{}frac\PYGZob{}1\PYGZcb{}\PYGZob{}1+\PYGZbs{}exp\PYGZob{}\PYGZbs{}big(\PYGZbs{}frac\PYGZob{}E\PYGZhy{}E\PYGZus{}F\PYGZcb{}\PYGZob{}kT\PYGZcb{}\PYGZbs{}big)\PYGZcb{}\PYGZcb{}\PYGZdl{}\PYGZsq{}}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}Interpreter\PYGZsq{}}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}latex\PYGZsq{}}\PYG{p}{);}
+\PYG{n}{saveas}\PYG{p}{(}\PYG{n}{gcf}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}3\PYGZhy{}2(b)\PYGZsq{}}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}epsc\PYGZsq{}}\PYG{p}{);}
+\PYG{n}{T}\PYG{p}{=}\PYG{n}{table}\PYG{p}{(}\PYG{n}{E}\PYG{o}{\PYGZsq{}}\PYG{p}{,}\PYG{n}{f}\PYG{o}{\PYGZsq{}}\PYG{p}{);}
+\PYG{n}{writetable}\PYG{p}{(}\PYG{n}{T}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}3\PYGZhy{}2(b).csv\PYGZsq{}}\PYG{p}{);}
+\end{Verbatim}

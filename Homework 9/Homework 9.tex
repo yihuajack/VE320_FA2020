@@ -1,0 +1,198 @@
+\documentclass[a4paper]{article}
+\usepackage{amsmath,amssymb,caption,float,geometry,graphicx,xcolor}
+\captionsetup[figure]{labelsep=period}
+\geometry{left=3.5cm,right=3.5cm,top=3.3cm,bottom=3.3cm}
+\renewcommand\thesection{\arabic{section}}
+\begin{document}
+\begin{center}
+\huge
+\textbf{VE320\\Intro to Semiconductor Devices\\}
+\Large
+\vspace{30pt}
+\uppercase{Homework 9}\\
+\vspace{5pt}\today\\
+\vspace{5pt}
+Yihua Liu 518021910998
+\vspace{5pt}
+\rule[-10pt]{.97\linewidth}{0.05em}
+\end{center}
+1. (a) Since $V_{SG}>-V_T$ and $V_{SD}<V_{SG}+V_T$, the drain current $I_D$ for $V_{SG}=0.8$ V, $V_{SD}=0.25$ V is
+\[
+    \begin{aligned}    
+        I_D&=\frac{k_p'}{2}\cdot\frac{W}{L}\cdot\left[2\left(V_{SG}+V_T\right)V_{SD}-V_{SD}^2\right]\\
+        &=\frac{1.0\times10^{-4}}{2}\times15\times\left[2\times\left(0.8-0.4\right)\times0.25-0.25^2\right]\\
+        &=1.031\times10^{-4}\,\text{A}.
+    \end{aligned}
+\]
+
+(b) Since $V_{SD}>V_{SG}+V_T$, the drain current $I_D$ for $V_{SG}=0.8$ V, $V_{SD}=1.0$ V is
+\[I_D=\frac{k_p'}{2}\cdot\frac{W}{L}\cdot\left(V_{SG}+V_T\right)^2=\frac{1.0\times10^{-4}}{2}\times15\times\left(0.8-0.4\right)^2=1.2\times10^{-4}\,\text{A}.\]
+
+(c) Since $V_{SD}>V_{SG}+V_T$, the drain current $I_D$ for $V_{SG}=1.2$ V, $V_{SD}=1.0$ V is
+\[I_D=\frac{k_p'}{2}\cdot\frac{W}{L}\cdot\left(V_{SG}+V_T\right)^2=\frac{1.0\times10^{-4}}{2}\times15\times\left(1.2-0.4\right)^2=4.8\times10^{-4}\,\text{A}.\]
+
+(d) Since $V_{SD}>V_{SG}+V_T$, the drain current $I_D$ for $V_{SG}=1.2$ V, $V_{SD}=2.0$ V is
+\[I_D=\frac{k_p'}{2}\cdot\frac{W}{L}\cdot\left(V_{SG}+V_T\right)^2=\frac{1.0\times10^{-4}}{2}\times15\times\left(1.2-0.4\right)^2=4.8\times10^{-4}\,\text{A}.\]
+
+2. (a) Assume the transistor operates in the saturation region, then the drain current is
+\[I_D=\frac{k_p'}{2}\cdot\frac{W}{L}\cdot\left(V_{SG}+V_T\right)^2\]
+\[10^{-4}=\frac{1.2\times10^{-4}}{2}\times20\times(0+V_T)^2\]
+Solving the equation, the $V_T$ value is
+\[V_T=0.2887\,\text{V}.\]
+Then we can check that
+\[V_{SD}=1\,\text{V}>V_{SG}+V_T=0.2887\,\text{V}\]
+so the transistor does operate in the saturation region.
+
+(b) Since $V_{SD}>V_{SG}+V_T$, the drain current $I_D$ for $V_{SG}=0.4$ V, $V_{SB}=0$ V, and $V_{SD}=1.5$ V is
+\[I_D=\frac{k_p'}{2}\cdot\frac{W}{L}\cdot\left(V_{SG}+V_T\right)^2=\frac{1.2\times10^{-4}}{2}\times20\times\left(0.4+0.2887\right)^2=5.69\times10^{-4}\,\text{A}.\]
+
+(c) Since $V_{SG}>-V_T$ and $V_{SD}<V_{SG}+V_T$, the value of $I_D$ for $V_{SG}=0.6$ V, $V_{SB}=0$ V, and $V_{SD}=0.15$ V is
+\[
+    \begin{aligned}    
+        I_D&=\frac{k_p'}{2}\cdot\frac{W}{L}\cdot\left[2\left(V_{SG}+V_T\right)V_{SD}-V_{SD}^2\right]\\
+        &=\frac{1.2\times10^{-4}}{2}\times20\times\left[2\times\left(0.6+0.2887\right)\times0.15-0.15^2\right]\\
+        &=2.929\times10^{-4}\,\text{A}.\\
+    \end{aligned}
+\]
+
+3. (a) The difference between $E_{Fi}$ and $E_F$ is
+\[\phi_{fp}=\frac{kT}{e}\ln{\left(\frac{N_a}{n_i}\right)}=\frac{300k}{e}\ln{\left(\frac{10^{15}}{1.5\times10^{10}}\right)}=0.287\,\text{V}.\]
+The threshold voltage is
+\[
+    \begin{aligned}
+        V_{TN}&=\frac{Q_{SD}'(\text{max})}{C_\text{ox}}+V_{FB}+2\phi_{fp}\\
+        &=\left((Q_{SD}'(\text{max})-Q_{ss}'\right)\left(\frac{t_\text{ox}}{\epsilon_\text{ox}}\right)+\phi_{ms}+2\phi_{fp}\\
+        &=\left((eN_ax_{dT}-Q_{ss}'\right)\left(\frac{t_\text{ox}}{\epsilon_\text{ox}}\right)+\phi_{ms}+2\phi_{fp}\\
+        &=\left((\sqrt{4eN_a\epsilon_s\phi_{fp}}-Q_{ss}'\right)\left(\frac{t_\text{ox}}{\epsilon_\text{ox}}\right)+\phi_{ms}+2\phi_{fp}\\
+        &=\left(\sqrt{4e\times10^{15}\times0.01\times11.7\epsilon_0\phi_{fp}}-5\times10^{10}e\right)\left(\frac{4\times10^{-6}}{0.01\times3.9\epsilon_0}\right)-1+2\phi_{fp}\\
+        &=-0.359\,\text{V}.
+    \end{aligned}
+\]
+
+(b) It is possible to apply a $V_{SB}$ voltage such that $V_T=0$. The body effect coefficient is
+\[\gamma=\frac{2\epsilon_seN_a}{C_\text{ox}}=\sqrt{2e\times11.7\times0.01\epsilon_0\times10^{15}}\frac{4\times10^{-6}}{3.9\times0.01\epsilon_0}=0.211\,\text{V}^{1/2}.\]
+The value of $\Delta V_T$ is
+\[\Delta V_T=-V_{TN}=\gamma\left(\sqrt{2\phi_{fp}+V_{SB}}-\sqrt{2\phi_{fp}}\right)\]
+Solving the equation, the value of $V_{SB}$ is
+\[V_{SB}=\left(\frac{-V_{TN}}{\gamma}+\sqrt{2\phi_{fp}}\right)^2-2\phi_{fp}=5.46\,\text{V}.\]
+
+4. (a) The transconductance is
+\[
+    \begin{aligned}    
+        g_{ms}&=\frac{k_n'W(V_{GS}-V_T)}{L}\\
+        &=\mu_n\frac{\epsilon}{t_\text{ox}}\frac{W}{L}(V_{GS}-V_T)\\
+        &=400\times\frac{3.9\times0.01\epsilon_0}{4.75\times10^{-6}}\times10\times(5-0.65)\\
+        &=1.265\times10^{-3}\,\mathrm{A/V}.
+    \end{aligned}
+\]
+We have the relation
+\[g_m'=0.8g_m=\frac{g_m}{1+g_mr_s}.\]
+Solving the equation, the value of source resistance is
+\[r_s=197.6\,\Omega.\]
+
+(b) The ratio is
+\[
+    \begin{aligned}
+        \frac{g_m'}{g_m}&=\frac{1}{1+\mu_n\frac{\epsilon}{t_\text{ox}}\frac{W}{L}(V_{GS}-V_T)r_s}\\
+        &=\frac{1}{1+400\times\frac{3.9\times0.01\epsilon_0}{4.75\times10^{-6}}\times10\times(3-0.65)r_s}\\
+        &=0.881.
+    \end{aligned}
+\]
+Therefore, $g_{ms}$ is reduced from its ideal value when $V_G=3$ V by 11.9\,\%.
+
+5. (a) The total current is
+\[I=10^6\times10^{-15}\exp{\left(\frac{V_{GS}}{2.1V_t}\right)}=10^{-9}\exp{\left(\frac{eV_{GS}}{630k}\right)}.\]
+At $V_{GS}=0.5$ V, the total current is
+\[I=10^{-9}\exp{\left(\frac{0.5e}{630k}\right)}=9.996\times10^{-6}\,\text{A}.\]
+At $V_{GS}=0.7$ V, the total current is
+\[I=10^{-9}\exp{\left(\frac{0.7e}{630k}\right)}=3.979\times10^{-4}\,\text{A}.\]
+At $V_{GS}=0.9$ V, the total current is
+\[I=10^{-9}\exp{\left(\frac{0.9e}{630k}\right)}=1.584\times10^{-2}\,\text{A}.\]
+
+(b) The total power dissipated in the chip is
+\[P=I_DV_DD=5I_D.\]
+The total power dissipated in the chip at $V_{GS}=0.5$ V is
+\[P=5I_D=4.998\times10^{-5}\,\text{W}.\]
+The total power dissipated in the chip at $V_{GS}=0.7$ V is
+\[P=5I_D=1.989\times10^{-3}\,\text{W}.\]
+The total power dissipated in the chip at $V_{GS}=0.9$ V is
+\[P=5I_D=7.919\times10^{-2}\,\text{W}.\]
+
+6. (a) (i) The difference between $E_{Fi}$ and $E_F$ is
+\[\phi_{fp}=\frac{kT}{e}\ln{\left(\frac{N_a}{n_i}\right)}=\frac{300k}{e}\ln{\left(\frac{4\times10^{16}}{1.5\times10^{10}}\right)}=0.3825\,\text{V}.\]
+The threshold voltage is
+\[
+    \begin{aligned}
+        V_{TN}&=\left((\sqrt{4eN_a\epsilon_s\phi_{fp}}-Q_{ss}'\right)\left(\frac{t_\text{ox}}{\epsilon_\text{ox}}\right)+\phi_{ms}+2\phi_{fp}\\
+        &=\left(\sqrt{4e\times4\times10^{16}\times0.01\times11.7\epsilon_0\phi_{fp}}-4\times10^{10}e\right)\left(\frac{1.2\times10^{-6}}{0.01\times3.9\epsilon_0}\right)-0.5+2\phi_{fp}\\
+        &=0.593\,\text{V}.
+    \end{aligned}
+\]
+The drain-source saturation voltage is
+\[V_{DS}=V_{GS}-V_{TN}=1.25-0.593=0.657\,\text{V}.\]
+The value of $\Delta L$ is
+\[\Delta L=\sqrt{\frac{2\epsilon}{eN_a}}\left(\sqrt{\phi_{fp}+V_{DS}+\Delta V_{DS}}-\sqrt{\phi_{fp}+V_{DS}}\right).\]
+$\Delta L$ for $\Delta V_{DS}=1$ V is
+\[\Delta L=\sqrt{\frac{2\times0.117\epsilon_0}{4\times10^{16}e}}\left(\sqrt{\phi_{fp}+V_{DS}+1}-\sqrt{\phi_{fp}+V_{DS}}\right)=7.346\times10^{-8}\,\text{m}.\]
+(ii) $\Delta L$ for $\Delta V_{DS}=2$ V is
+\[\Delta L=\sqrt{\frac{2\times0.117\epsilon_0}{4\times10^{16}e}}\left(\sqrt{\phi_{fp}+V_{DS}+1}-\sqrt{\phi_{fp}+V_{DS}}\right)=1.302\times10^{-7}\,\text{m}.\]
+(iii) $\Delta L$ for $\Delta V_{DS}=4$ V is
+\[\Delta L=\sqrt{\frac{2\times0.117\epsilon_0}{4\times10^{16}e}}\left(\sqrt{\phi_{fp}+V_{DS}+1}-\sqrt{\phi_{fp}+V_{DS}}\right)=2.203\times10^{-7}\,\text{m}.\]
+
+(b) We want
+\[\frac{\Delta L}{L}=0.12,\]
+using result from (a) (iii), the minimum channel length is
+\[L=1.836\times10^{-6}\,\text{m}.\]
+
+7. (a) (i) The ideal drain current for $V_{GS}=0.8$ V is
+\[I_D=\frac{k_n'}{2}\cdot\frac{W}{L}\cdot\left(V_{GS}-V_T\right)^2=\frac{7.5\times10^{-5}}{2}\times10\times\left(0.8-0.35\right)^2=7.594\times10^{-5}\,\text{A}.\]
+(ii) The drain current if $\lambda=0.02\,\mathrm{V^{-1}}$ is
+\[I_D'=I_D(1+\lambda V_{DS})=I_D(1+0.02\times1.5)=7.822\times10^{-5}\,\text{A}.\]
+(iii) The output resistance for $\lambda=0.02\,\mathrm{V^{-1}}$ is
+\[r_o=\frac{1}{\lambda I_D}=\frac{1}{0.02I_D}=6.584\times10^5\,\Omega.\]
+
+(b) (i) The ideal drain current for $V_{GS}=1.25$ V is
+\[I_D=\frac{k_n'}{2}\cdot\frac{W}{L}\cdot\left(V_{GS}-V_T\right)^2=\frac{7.5\times10^{-5}}{2}\times10\times\left(1.25-0.35\right)^2=3.0375\times10^{-4}\,\text{A}.\]
+(ii) The drain current if $\lambda=0.02\,\mathrm{V^{-1}}$ is
+\[I_D'=I_D(1+\lambda V_{DS})=I_D(1+0.02\times1.5)=3.129\times10^{-4}\,\text{A}.\]
+(iii) The output resistance for $\lambda=0.02\,\mathrm{V^{-1}}$ is
+\[r_o=\frac{1}{\lambda I_D}=\frac{1}{0.02I_D}=1.646\times10^5\,\Omega.\]
+
+8. (a) (i) The maximum drain current in the original device is
+\[I_D=\frac{k_n'}{2}\cdot\frac{W}{L}\cdot\left(V_{GS}-V_T\right)^2=\frac{1.5\times10^{-4}}{2}\times\frac{6.0}{1.2}\times\left(3-0.45\right)^2=2.438\times10^{-3}\,\text{A}.\]
+(ii) The maximum drain current in the scaled device is
+\[
+    \begin{aligned}
+        I_D&=\frac{k_n'}{2k}\cdot\frac{kW}{kL}\cdot\left(kV_{GS}-V_T\right)^2\\
+        &=\frac{1.5\times10^{-4}}{2\times0.65}\times\frac{6.0}{1.2}\times\left(3\times0.65-0.45\right)^2\\
+        &=1.298\times10^{-3}\,\text{A}.
+    \end{aligned}
+\]
+
+(b) (i) The maximum power dissipation in the original device is
+\[P=I_DV_D=3I_D=7.315\times10^{-3}\,\text{W}.\]
+(ii) The maximum power dissipation in the scaled device is
+\[P=I_DkV_D=1.95I_D=2.531\times10^{-3}\,\text{W}.\]
+
+9. The difference between $E_{Fi}$ and $E_F$ is
+\[\phi_{fp}=\frac{kT}{e}\ln{\left(\frac{N_a}{n_i}\right)}=\frac{300k}{e}\ln{\left(\frac{2\times10^{16}}{1.5\times10^{10}}\right)}=0.3646\,\text{V}.\]
+The maximum charge width is
+\[x_{dT}=\sqrt{\frac{4\epsilon_s\phi_{fp}}{eN_a}}=\sqrt{\frac{4\times11.7\times0.01\epsilon_0\phi_{fp}}{2\times10^{16}e}}=2.171\times10^{-5}\,\text{cm}.\]
+The threshold voltage shift is
+\[
+    \begin{aligned}
+        \Delta V_T&=-\frac{eN_ax_{dT}}{C_\text{ox}}\left[\frac{r_j}{L}\left(\sqrt{1+\frac{2x_{dT}}{r_j}}-1\right)\right]\\
+        &=-\frac{2\times10^{16}ex_{dT}\times8\times10^{-7}}{3.9\times0.01\epsilon_0}\left[\frac{0.30}{0.70}\left(\sqrt{1+\frac{2x_{dT}}{3\times10^{-5}}}-1\right)\right]\\
+        &=-0.0390\,\text{V}.
+    \end{aligned}
+\]
+The equivalent long-channel threshold voltage is
+\[V_{TO}=V_T-\Delta V_T=0.3890\,\text{V}.\]
+
+10. The difference between $E_{Fi}$ and $E_F$ is
+\[\phi_{fp}=\frac{kT}{e}\ln{\left(\frac{N_a}{n_i}\right)}=\frac{300k}{e}\ln{\left(\frac{3\times10^{16}}{1.5\times10^{10}}\right)}=0.3751\,\text{V}.\]
+The maximum charge width is
+\[x_{dT}=\sqrt{\frac{4\epsilon_s\phi_{fp}}{eN_a}}=\sqrt{\frac{4\times11.7\times0.01\epsilon_0\phi_{fp}}{3\times10^{16}e}}=1.798\times10^{-5}\,\text{cm}.\]
+The shift in threshold voltage due to narrow-channel effects is
+\[\Delta V_T&=\frac{eN_ax_{dT}}{C_\text{ox}}\left(\frac{\xi x_{dT}}{W}\right)=\frac{3\times10^{16}ex_{dT}\times8\times10^{-7}}{3.9\times0.01\epsilon_0}\left(\frac{\frac{\pi}{2}x_{dT}}{2.2\times10^{-4}}\right)\\=0.02571\,\text{V}.\]
+\end{document}

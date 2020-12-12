@@ -1,0 +1,110 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c}{(* Content\PYGZhy{}type: application/vnd.wolfram.mathematica *)}
+
+\PYG{c}{(*** Wolfram Notebook File ***)}
+\PYG{c}{(* http://www.wolfram.com/nb *)}
+
+\PYG{c}{(* CreatedBy=\PYGZsq{}Mathematica 12.1\PYGZsq{} *)}
+
+\PYG{c}{(*CacheID: 234*)}
+\PYG{c}{(* Internal cache information:}
+\PYG{c}{NotebookFileLineBreakTest}
+\PYG{c}{NotebookFileLineBreakTest}
+\PYG{c}{NotebookDataPosition[       158,          7]}
+\PYG{c}{NotebookDataLength[      3427,        101]}
+\PYG{c}{NotebookOptionsPosition[      2743,         81]}
+\PYG{c}{NotebookOutlinePosition[      3165,         98]}
+\PYG{c}{CellTagsIndexPosition[      3122,         95]}
+\PYG{c}{WindowFrame\PYGZhy{}\PYGZgt{}Normal*)}
+
+\PYG{c}{(* Beginning of Notebook Content *)}
+\PYG{n}{Notebook}\PYG{p}{[\PYGZob{}}
+\PYG{n}{Cell}\PYG{p}{[}\PYG{n}{BoxData}\PYG{p}{[}
+\PYG{+w}{ }\PYG{n}{RowBox}\PYG{p}{[\PYGZob{}}\PYG{l+s}{\PYGZdq{}(*\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }
+\PYG{+w}{  }\PYG{n}{RowBox}\PYG{p}{[\PYGZob{}}\PYG{l+s}{\PYGZdq{}Plot\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}[\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }
+\PYG{+w}{   }\PYG{n}{RowBox}\PYG{p}{[\PYGZob{}}
+\PYG{+w}{    }\PYG{n}{RowBox}\PYG{p}{[\PYGZob{}}\PYG{l+s}{\PYGZdq{}Exp\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}[\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }
+\PYG{+w}{     }\PYG{n}{RowBox}\PYG{p}{[\PYGZob{}}
+\PYG{+w}{      }\PYG{n}{RowBox}\PYG{p}{[\PYGZob{}}
+\PYG{+w}{       }\PYG{n}{RowBox}\PYG{p}{[\PYGZob{}}\PYG{l+s}{\PYGZdq{}(\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }
+\PYG{+w}{        }\PYG{n}{RowBox}\PYG{p}{[\PYGZob{}}
+\PYG{+w}{         }\PYG{n}{RowBox}\PYG{p}{[\PYGZob{}}\PYG{l+s}{\PYGZdq{}\PYGZhy{}\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}0.3\PYGZdq{}}\PYG{p}{\PYGZcb{}],}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}*\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}1.602176565\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}*\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }
+\PYG{+w}{         }\PYG{n}{SuperscriptBox}\PYG{p}{[}\PYG{l+s}{\PYGZdq{}10\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }
+\PYG{+w}{          }\PYG{n}{RowBox}\PYG{p}{[\PYGZob{}}\PYG{l+s}{\PYGZdq{}\PYGZhy{}\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}19\PYGZdq{}}\PYG{p}{\PYGZcb{}]]\PYGZcb{}],}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{})\PYGZdq{}}\PYG{p}{\PYGZcb{}],}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}/\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }
+\PYG{+w}{       }\PYG{n}{RowBox}\PYG{p}{[\PYGZob{}}\PYG{l+s}{\PYGZdq{}(\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }
+\PYG{+w}{        }\PYG{n}{RowBox}\PYG{p}{[\PYGZob{}}\PYG{l+s}{\PYGZdq{}1.3806488\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}*\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }
+\PYG{+w}{         }\PYG{n}{SuperscriptBox}\PYG{p}{[}\PYG{l+s}{\PYGZdq{}10\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }
+\PYG{+w}{          }\PYG{n}{RowBox}\PYG{p}{[\PYGZob{}}\PYG{l+s}{\PYGZdq{}\PYGZhy{}\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}23\PYGZdq{}}\PYG{p}{\PYGZcb{}]],}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}*\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}300\PYGZdq{}}\PYG{p}{\PYGZcb{}],}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{})\PYGZdq{}}\PYG{p}{\PYGZcb{}]\PYGZcb{}],}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}\PYGZhy{}\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}x\PYGZdq{}}\PYG{p}{\PYGZcb{}],}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}]\PYGZdq{}}\PYG{p}{\PYGZcb{}],}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{},\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }
+\PYG{+w}{    }\PYG{n}{RowBox}\PYG{p}{[\PYGZob{}}\PYG{l+s}{\PYGZdq{}\PYGZob{}\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }
+\PYG{+w}{     }\PYG{n}{RowBox}\PYG{p}{[\PYGZob{}}\PYG{l+s}{\PYGZdq{}x\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{},\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}0\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{},\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}2\PYGZdq{}}\PYG{p}{\PYGZcb{}],}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}\PYGZcb{}\PYGZdq{}}\PYG{p}{\PYGZcb{}]\PYGZcb{}],}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}]\PYGZdq{}}\PYG{p}{\PYGZcb{}],}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}*)\PYGZdq{}}\PYG{p}{\PYGZcb{}]],}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}Input\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{ }\PYG{n}{CellChangeTimes}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{p}{\PYGZob{}\PYGZob{}}\PYG{l+m+mf}{3.8109378614845905}\PYG{err}{`}\PYG{o}{*\PYGZca{}}\PYG{l+m+mi}{9}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{3.8109378787833195}\PYG{err}{`}\PYG{o}{*\PYGZca{}}\PYG{l+m+mi}{9}\PYG{p}{\PYGZcb{},}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{   }\PYG{l+m+mf}{3.8109379181114197}\PYG{err}{`}\PYG{o}{*\PYGZca{}}\PYG{l+m+mi}{9}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{3.810937987892795}\PYG{o}{*\PYGZca{}}\PYG{l+m+mi}{9}\PYG{p}{\PYGZcb{},}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{l+m+mf}{3.81093876493412}\PYG{o}{*\PYGZca{}}\PYG{l+m+mi}{9}\PYG{p}{,}\PYG{+w}{ }
+\PYG{+w}{   }\PYG{l+m+mf}{3.8109387738984528}\PYG{err}{`}\PYG{o}{*\PYGZca{}}\PYG{l+m+mi}{9}\PYG{p}{\PYGZcb{},}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{l+m+mf}{3.8109432792995567}\PYG{err}{`}\PYG{o}{*\PYGZca{}}\PYG{l+m+mi}{9}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{3.8109432808477755}\PYG{err}{`}\PYG{o}{*\PYGZca{}}\PYG{l+m+mi}{9}\PYG{p}{\PYGZcb{},}\PYG{+w}{ }
+\PYG{+w}{   }\PYG{l+m+mf}{3.810943431331065}\PYG{o}{*\PYGZca{}}\PYG{l+m+mi}{9}\PYG{p}{,}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{l+m+mf}{3.811122641584516}\PYG{o}{*\PYGZca{}}\PYG{l+m+mi}{9}\PYG{p}{,}\PYG{+w}{ }
+\PYG{+w}{   }\PYG{l+m+mf}{3.811122654491535}\PYG{o}{*\PYGZca{}}\PYG{l+m+mi}{9}\PYG{p}{\PYGZcb{}\PYGZcb{},}\PYG{n}{ExpressionUUID}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{err}{\PYGZdq{}}\PYG{n}{d5cf12e5}\PYG{o}{\PYGZhy{}}\PYG{n}{c8e0}\PYG{l+m+mi}{\PYGZhy{}4}\PYG{n}{b95}\PYG{l+m+mi}{\PYGZhy{}9941}\PYG{o}{\PYGZhy{}}\PYG{err}{\PYGZbs{}}
+\PYG{l+m+mi}{52}\PYG{n}{cf23390283}\PYG{err}{\PYGZdq{}}\PYG{p}{],}
+
+\PYG{n}{Cell}\PYG{p}{[}\PYG{n}{BoxData}\PYG{p}{[}
+\PYG{+w}{ }\PYG{n}{RowBox}\PYG{p}{[\PYGZob{}}\PYG{l+s}{\PYGZdq{}Plot\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}[\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }
+\PYG{+w}{  }\PYG{n}{RowBox}\PYG{p}{[\PYGZob{}}
+\PYG{+w}{   }\PYG{n}{RowBox}\PYG{p}{[\PYGZob{}}\PYG{l+s}{\PYGZdq{}1.83\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}*\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}1.602176565\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}*\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }
+\PYG{+w}{    }\PYG{n}{SuperscriptBox}\PYG{p}{[}\PYG{l+s}{\PYGZdq{}10\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}3\PYGZdq{}}\PYG{p}{],}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}*\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }
+\PYG{+w}{    }\PYG{n}{SqrtBox}\PYG{p}{[}
+\PYG{+w}{     }\PYG{n}{RowBox}\PYG{p}{[\PYGZob{}}\PYG{l+s}{\PYGZdq{}2.912\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}*\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }
+\PYG{+w}{      }\PYG{n}{RowBox}\PYG{p}{[\PYGZob{}}\PYG{l+s}{\PYGZdq{}Exp\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}[\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }
+\PYG{+w}{       }\PYG{n}{FractionBox}\PYG{p}{[}
+\PYG{+w}{        }\PYG{n}{RowBox}\PYG{p}{[\PYGZob{}}
+\PYG{+w}{         }\PYG{n}{RowBox}\PYG{p}{[\PYGZob{}}\PYG{l+s}{\PYGZdq{}\PYGZhy{}\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}1.12\PYGZdq{}}\PYG{p}{\PYGZcb{}],}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}*\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}1.602176565\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}*\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }
+\PYG{+w}{         }\PYG{n}{SuperscriptBox}\PYG{p}{[}\PYG{l+s}{\PYGZdq{}10\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }
+\PYG{+w}{          }\PYG{n}{RowBox}\PYG{p}{[\PYGZob{}}\PYG{l+s}{\PYGZdq{}\PYGZhy{}\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}19\PYGZdq{}}\PYG{p}{\PYGZcb{}]]\PYGZcb{}],}\PYG{+w}{ }
+\PYG{+w}{        }\PYG{n}{RowBox}\PYG{p}{[\PYGZob{}}\PYG{l+s}{\PYGZdq{}1.3806488\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}*\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }
+\PYG{+w}{         }\PYG{n}{SuperscriptBox}\PYG{p}{[}\PYG{l+s}{\PYGZdq{}10\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }
+\PYG{+w}{          }\PYG{n}{RowBox}\PYG{p}{[\PYGZob{}}\PYG{l+s}{\PYGZdq{}\PYGZhy{}\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}23\PYGZdq{}}\PYG{p}{\PYGZcb{}]],}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}*\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}T\PYGZdq{}}\PYG{p}{\PYGZcb{}]],}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}]\PYGZdq{}}\PYG{p}{\PYGZcb{}]\PYGZcb{}]]\PYGZcb{}],}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{},\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }
+\PYG{+w}{   }\PYG{n}{RowBox}\PYG{p}{[\PYGZob{}}\PYG{l+s}{\PYGZdq{}\PYGZob{}\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }
+\PYG{+w}{    }\PYG{n}{RowBox}\PYG{p}{[\PYGZob{}}\PYG{l+s}{\PYGZdq{}T\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{},\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}200\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{},\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}600\PYGZdq{}}\PYG{p}{\PYGZcb{}],}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}\PYGZcb{}\PYGZdq{}}\PYG{p}{\PYGZcb{}]\PYGZcb{}],}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}]\PYGZdq{}}\PYG{p}{\PYGZcb{}]],}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}Input\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{ }\PYG{n}{CellChangeTimes}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{p}{\PYGZob{}\PYGZob{}}\PYG{l+m+mf}{3.8110791090646105}\PYG{err}{`}\PYG{o}{*\PYGZca{}}\PYG{l+m+mi}{9}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{3.8110791211298428}\PYG{err}{`}\PYG{o}{*\PYGZca{}}\PYG{l+m+mi}{9}\PYG{p}{\PYGZcb{},}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{  }\PYG{l+m+mf}{3.811079158599968}\PYG{o}{*\PYGZca{}}\PYG{l+m+mi}{9}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{3.8110792401741157}\PYG{err}{`}\PYG{o}{*\PYGZca{}}\PYG{l+m+mi}{9}\PYG{p}{\PYGZcb{},}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{l+m+mf}{3.81107927092765}\PYG{o}{*\PYGZca{}}\PYG{l+m+mi}{9}\PYG{p}{,}\PYG{+w}{ }
+\PYG{+w}{  }\PYG{l+m+mf}{3.8110792716030073}\PYG{err}{`}\PYG{o}{*\PYGZca{}}\PYG{l+m+mi}{9}\PYG{p}{\PYGZcb{}\PYGZcb{},}
+\PYG{+w}{ }\PYG{n}{CellLabel}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{l+s}{\PYGZdq{}In[2]:=\PYGZdq{}}\PYG{p}{,}\PYG{n}{ExpressionUUID}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{l+s}{\PYGZdq{}651d5098\PYGZhy{}d01f\PYGZhy{}4f0e\PYGZhy{}aa11\PYGZhy{}e4b7bb61fad3\PYGZdq{}}\PYG{p}{],}
+
+\PYG{n}{Cell}\PYG{p}{[}\PYG{n}{CellGroupData}\PYG{p}{[\PYGZob{}}
+
+\PYG{n}{Cell}\PYG{p}{[}\PYG{n}{BoxData}\PYG{p}{[}
+\PYG{+w}{ }\PYG{n}{RowBox}\PYG{p}{[\PYGZob{}}\PYG{l+s}{\PYGZdq{}Export\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}[\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }
+\PYG{+w}{  }\PYG{n}{RowBox}\PYG{p}{[\PYGZob{}}\PYG{l+s}{\PYGZdq{}\PYGZbs{}\PYGZdq{}}\PYG{err}{\PYGZbs{}}\PYG{o}{\PYGZlt{}}\PYG{l+m+mi}{3}\PYG{l+m+mf}{\PYGZhy{}12.}\PYG{n}{eps}\PYG{err}{\PYGZbs{}}\PYG{o}{\PYGZgt{}}\PYG{err}{\PYGZbs{}}\PYG{l+s}{\PYGZdq{}\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{},\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}\PYGZpc{}2\PYGZdq{}}\PYG{p}{\PYGZcb{}],}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}]\PYGZdq{}}\PYG{p}{\PYGZcb{}]],}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}Input\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{ }\PYG{n}{CellChangeTimes}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{p}{\PYGZob{}\PYGZob{}}\PYG{l+m+mf}{3.8110793957433367}\PYG{err}{`}\PYG{o}{*\PYGZca{}}\PYG{l+m+mi}{9}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{3.8110794132211604}\PYG{err}{`}\PYG{o}{*\PYGZca{}}\PYG{l+m+mi}{9}\PYG{p}{\PYGZcb{}\PYGZcb{},}
+\PYG{+w}{ }\PYG{n}{CellLabel}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{l+s}{\PYGZdq{}In[6]:=\PYGZdq{}}\PYG{p}{,}\PYG{n}{ExpressionUUID}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{l+s}{\PYGZdq{}76de5bb8\PYGZhy{}5ec1\PYGZhy{}4ca3\PYGZhy{}bc08\PYGZhy{}295822719b78\PYGZdq{}}\PYG{p}{],}
+
+\PYG{n}{Cell}\PYG{p}{[}\PYG{n}{BoxData}\PYG{p}{[}\PYG{l+s}{\PYGZdq{}\PYGZbs{}\PYGZlt{}\PYGZbs{}\PYGZdq{}}\PYG{l+m+mi}{3}\PYG{l+m+mf}{\PYGZhy{}12.}\PYG{n}{eps}\PYG{err}{\PYGZbs{}}\PYG{l+s}{\PYGZdq{}\PYGZbs{}\PYGZgt{}\PYGZdq{}}\PYG{p}{],}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}Output\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{ }\PYG{n}{CellChangeTimes}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{p}{\PYGZob{}}\PYG{l+m+mf}{3.811079414191784}\PYG{o}{*\PYGZca{}}\PYG{l+m+mi}{9}\PYG{p}{\PYGZcb{},}
+\PYG{+w}{ }\PYG{n}{CellLabel}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{l+s}{\PYGZdq{}Out[6]=\PYGZdq{}}\PYG{p}{,}\PYG{n}{ExpressionUUID}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{l+s}{\PYGZdq{}e72d7bc2\PYGZhy{}2127\PYGZhy{}43bd\PYGZhy{}ba86\PYGZhy{}f21d5b3fecd4\PYGZdq{}}\PYG{p}{]}
+\PYG{p}{\PYGZcb{},}\PYG{+w}{ }\PYG{n}{Open}\PYG{+w}{  }\PYG{p}{]]}
+\PYG{p}{\PYGZcb{},}
+\PYG{n}{WindowSize}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{p}{\PYGZob{}}\PYG{l+m+mf}{759.75}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{714.}\PYG{p}{\PYGZcb{},}
+\PYG{n}{WindowMargins}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{p}{\PYGZob{}\PYGZob{}}\PYG{l+m+mf}{327.75}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{Automatic}\PYG{p}{\PYGZcb{},}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{l+m+mf}{\PYGZhy{}5.25}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{Automatic}\PYG{p}{\PYGZcb{}\PYGZcb{},}
+\PYG{n}{FrontEndVersion}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{err}{\PYGZdq{}}\PYG{l+m+mf}{12.1}\PYG{+w}{ }\PYG{n}{for}\PYG{+w}{ }\PYG{n}{Microsoft}\PYG{+w}{ }\PYG{n}{Windows}\PYG{+w}{ }\PYG{p}{(}\PYG{l+m+mi}{64}\PYG{o}{\PYGZhy{}}\PYG{n}{bit}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{(}\PYG{l+m+mi}{2020}\PYG{err}{\PYGZbs{}:}\PYG{l+m+mi}{5}\PYG{n}{e746}\PYG{err}{\PYGZbs{}:}\PYG{l+m+mi}{67089}\PYG{err}{\PYGZbs{}}
+\PYG{err}{\PYGZbs{}:}\PYG{l+m+mi}{65}\PYG{n}{e5}\PYG{p}{)}\PYG{err}{\PYGZdq{}}\PYG{p}{,}
+\PYG{n}{StyleDefinitions}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{l+s}{\PYGZdq{}Default.nb\PYGZdq{}}\PYG{p}{,}
+\PYG{n}{ExpressionUUID}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{l+s}{\PYGZdq{}e820de3b\PYGZhy{}0af0\PYGZhy{}44c7\PYGZhy{}a959\PYGZhy{}aa66ff4929cc\PYGZdq{}}
+\PYG{p}{]}
+\PYG{c}{(* End of Notebook Content *)}
+
+\PYG{c}{(* Internal cache information *)}
+\PYG{c}{(*CellTagsOutline}
+\PYG{c}{CellTagsIndex\PYGZhy{}\PYGZgt{}\PYGZob{}\PYGZcb{}}
+\PYG{c}{*)}
+\PYG{c}{(*CellTagsIndex}
+\PYG{c}{CellTagsIndex\PYGZhy{}\PYGZgt{}\PYGZob{}\PYGZcb{}}
+\PYG{c}{*)}
+\PYG{c}{(*NotebookFileOutline}
+\PYG{c}{Notebook[\PYGZob{}}
+\PYG{c}{Cell[558, 20, 907, 23, 32, \PYGZdq{}Input\PYGZdq{},ExpressionUUID\PYGZhy{}\PYGZgt{}\PYGZdq{}d5cf12e5\PYGZhy{}c8e0\PYGZhy{}4b95\PYGZhy{}9941\PYGZhy{}52cf23390283\PYGZdq{}],}
+\PYG{c}{Cell[1468, 45, 822, 21, 68, \PYGZdq{}Input\PYGZdq{},ExpressionUUID\PYGZhy{}\PYGZgt{}\PYGZdq{}651d5098\PYGZhy{}d01f\PYGZhy{}4f0e\PYGZhy{}aa11\PYGZhy{}e4b7bb61fad3\PYGZdq{}],}
+\PYG{c}{Cell[CellGroupData[\PYGZob{}}
+\PYG{c}{Cell[2315, 70, 246, 4, 43, \PYGZdq{}Input\PYGZdq{},ExpressionUUID\PYGZhy{}\PYGZgt{}\PYGZdq{}76de5bb8\PYGZhy{}5ec1\PYGZhy{}4ca3\PYGZhy{}bc08\PYGZhy{}295822719b78\PYGZdq{}],}
+\PYG{c}{Cell[2564, 76, 163, 2, 32, \PYGZdq{}Output\PYGZdq{},ExpressionUUID\PYGZhy{}\PYGZgt{}\PYGZdq{}e72d7bc2\PYGZhy{}2127\PYGZhy{}43bd\PYGZhy{}ba86\PYGZhy{}f21d5b3fecd4\PYGZdq{}]}
+\PYG{c}{\PYGZcb{}, Open  ]]}
+\PYG{c}{\PYGZcb{}}
+\PYG{c}{]}
+\PYG{c}{*)}
+\end{Verbatim}
